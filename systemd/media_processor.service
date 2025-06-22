@@ -1,0 +1,9 @@
+[Unit]
+Description=Media Processing and Upload Service
+After=network-online.target
+
+[Service]
+Type=oneshot
+# The script needs access to the config file, so we specify the working directory.
+WorkingDirectory=/usr/local/bin/automated-media-server
+ExecStart=/usr/local/bin/automated-media-server/process_media.sh

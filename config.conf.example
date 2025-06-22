@@ -1,0 +1,26 @@
+# =================================================
+#  Configuration for Media Processing Script
+# =================================================
+
+# --- Directory Paths ---
+STAGING_DIR="/data/nas/staging"
+ARCHIVE_DIR="/data/nas/archive"
+PROCESSED_DIR="/data/processed/to_upload"
+LOG_DIR="/data/nas/logs"
+DB_PATH="/data/nas/media_library.sqlite"
+
+# --- Rclone Configuration ---
+RCLONE_REMOTE="gphotos"
+
+# --- Processing Limits ---
+DAILY_PROCESSING_LIMIT="1000"
+
+# --- Image Compression Quality (JPEG) ---
+JPG_QUAL_MED="85"
+JPG_QUAL_LOW="75"
+
+# --- Video Compression Quality (CRF - Constant Rate Factor) ---
+VID_CRF_1080p="24"
+VID_CRF_720p="26"
+VID_CRF_360p="28"
+VID_CRF_270p="30"
